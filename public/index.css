@@ -1,0 +1,136 @@
+@import url('https://fonts.googleapis.com/css2?family=Pixelify+Sans&display=swap');
+
+body {
+    background-color: rgb(34, 29, 29);
+    font-family: 'Pixelify Sans', sans-serif;
+}
+
+.btn-watch {
+    background-color: red;
+    color: white;
+    border: none;
+}
+
+.btn-watch:hover {
+    background-color: rgb(207, 10, 10);
+    color: white;
+}
+
+.card,
+.card-footer {
+    background-color: aliceblue;
+}
+
+.background {
+    width: 100vw;
+    height: 100vh;
+    background-image: url("./assets/makiplays-retrowave.gif");
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.background::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    animation: darker-background 4s;
+    animation-fill-mode: forwards;
+}
+
+.glassed {
+    animation: fade-in 3s;
+    background: rgba(255, 255, 255, 0.2);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+}
+
+.fade-in {
+    animation: fade-in 3s;
+    max-width: 300px;
+}
+
+.img-radius-per {
+    border-radius: 30% 70% 70% 30% / 30% 30% 70% 70%;
+}
+
+#logo-homepage {
+    width: 20%;
+}
+
+.pagination{
+    z-index: 1;
+}
+
+.video-background {
+    background-image: url("./assets/untitled-1.gif");
+    background-size: cover;
+}
+
+.video-background::before {
+    content: '';
+    background: rgba(0, 0, 0, 0.6);
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.container-lucky {
+    max-width: 600px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.background-lucky{
+    background-image: url("./assets/giphy.gif");
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: start;
+    flex-direction: column;
+    align-items: center;
+}
+
+.background-lucky::before {
+    content: '';
+    background: rgba(0, 0, 0, 0.6);
+   position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+@keyframes darker-background {
+    from {
+        background: rgba(0, 0, 0, 0);
+    }
+
+    to {
+        background: rgba(0, 0, 0, 0.8);
+    }
+}
+
+@keyframes fade-in {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+
+
+

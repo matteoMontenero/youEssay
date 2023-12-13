@@ -31,8 +31,8 @@ const FeelLucky = () => {
 
             {/* Videos Container */}
 
-            <div className='container container-lucky mt-auto mb-auto'>
-                <div className="card text-center m-3 p-3 fade-in">
+            <div className='container-lucky mt-auto mb-auto'>
+                <div className="card single-card-lucky text-center m-3 p-3 fade-in">
                     <img
                         className="card-img-top"
                         src={data.snippet && data.snippet.thumbnails && data.snippet.thumbnails.high.url}

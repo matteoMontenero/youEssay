@@ -54,7 +54,6 @@ body {
 
 .fade-in {
     animation: fade-in 3s;
-    max-width: 300px;
 }
 
 .img-radius-per {
@@ -65,7 +64,7 @@ body {
     width: 20%;
 }
 
-.pagination{
+.pagination {
     z-index: 1;
 }
 
@@ -85,13 +84,16 @@ body {
 }
 
 .container-lucky {
-    max-width: 600px;
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
-.background-lucky{
+.single-card-lucky{
+    width: 100%;
+}
+
+.background-lucky {
     background-image: url("./assets/giphy.gif");
     width: 100%;
     height: 100vh;
@@ -104,7 +106,7 @@ body {
 .background-lucky::before {
     content: '';
     background: rgba(0, 0, 0, 0.6);
-   position: absolute;
+    position: absolute;
     top: 0;
     left: 0;
     width: 100%;
@@ -131,6 +133,12 @@ body {
     }
 }
 
+.custom-navbar-bg{
+    background-color: 'rgba(0, 31, 63, 0.8)';
+    border-radius: 10px;
+}
 
-
-
+.pagination-button{
+    font-size: 1.9rem;
+    height: 10%;
+}
